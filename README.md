@@ -1,4 +1,5 @@
 Benjamin Reichler and Aaron Shih
+
 Problems encountered: Originally, Min-heap functions were declared and written at the bottom
 of Main.cpp, but were moved to the top of the file so that all functions were declared before
 being called. Also, heapify() did not originally check to make sure that 2*i is a valid index in the
@@ -14,8 +15,10 @@ checking that the input file has exactly m+1 lines, the program will simply take
 until the end of the file is reached. For these reasons, the behavior of the program given a file
 that does not conform to the input format specifications in the project overview document (a
 malformed input document) may be unintuitive or unpredictable.
+
 External references: Only slide decks presented in Professor Luo’s CSE 310 class this semester
 were used as references to design the Min-Heap, Adjacency Matrix, and Dijkstra’s Algorithm.
+
 Design Decisions: Main.cpp builds the adjacency matrix by setting the 2D integer array
 adjmatrix[][] at both row u-1, column v-1, and row v-1, column u-1 equal to weight_uv for each
 input line of the form “u v weight_uv” after the first line, and then iterates through adjmatrix to
